@@ -1,0 +1,12 @@
+bot:
+  name: BotEgorSa_bot
+  token: 5885848482:AAFo9997fDItapVMNt_eG72uUozoUDo8XRU
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/TgBotDB
+    username: postgres
+    password: pass
+  jpa:
+    show-sql: true
