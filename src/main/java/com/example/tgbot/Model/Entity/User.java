@@ -10,7 +10,7 @@ import lombok.ToString;
 
 import java.sql.Timestamp;
 
-@Entity(name = "")//TODO name for Entity
+@Entity(name = "usersDataTable")
 @Getter
 @Setter
 @ToString

@@ -9,4 +9,6 @@ spring:
     username: postgres
     password: pass
   jpa:
+    hibernate:
+      ddl-auto: update
     show-sql: true
