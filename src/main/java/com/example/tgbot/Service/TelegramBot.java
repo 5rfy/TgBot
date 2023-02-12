@@ -142,11 +142,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         message.setReplyMarkup(markup);
 
-        try {
-            execute(message);
-        } catch (TelegramApiException e) {
-//            log.error("Error occurred: " + e.getMessage());//TODO settings log
-        }
+        executeMessage(message);
     }
 
     private void startCommandReceived(long id, String name){
@@ -162,6 +158,9 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         message.setReplyMarkup(keyboardMarkup());
 
+        executeMessage(message);
+    }
+    private void executeMessage(SendMessage message) {
         try {
             execute(message);
         } catch (TelegramApiException e) {
